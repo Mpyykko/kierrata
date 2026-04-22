@@ -1,0 +1,142 @@
+<!DOCTYPE html><html lang="fi"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Tilausvahvistus - KierrätäSE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {"error":"#ba1a1a","surface-variant":"#e4e2dd","surface-dim":"#dbdad5","outline":"#72796e","on-error":"#ffffff","secondary-fixed":"#f4dfcb","on-secondary":"#ffffff","on-primary-container":"#9dd090","secondary":"#6b5c4c","on-secondary-container":"#716252","on-background":"#1b1c19","surface-container":"#f0eee9","primary-fixed-dim":"#a1d494","on-tertiary-fixed":"#2b1609","primary":"#154212","on-tertiary-fixed-variant":"#5c4130","tertiary":"#4d3324","surface-container-lowest":"#ffffff","primary-fixed":"#bcf0ae","surface-tint":"#3b6934","tertiary-fixed":"#ffdbc8","on-primary":"#ffffff","tertiary-container":"#664a39","surface-container-high":"#eae8e3","on-secondary-fixed-variant":"#524436","surface-container-low":"#f5f3ee","on-primary-fixed":"#002201","primary-container":"#2d5a27","on-tertiary-container":"#e2bba5","tertiary-fixed-dim":"#e6bea9","surface-bright":"#fbf9f4","surface-container-highest":"#e4e2dd","inverse-primary":"#a1d494","on-tertiary":"#ffffff","on-surface-variant":"#42493e","surface":"#fbf9f4","secondary-container":"#f4dfcb","on-error-container":"#93000a","background":"#fbf9f4","on-primary-fixed-variant":"#23501e","inverse-surface":"#30312e","secondary-fixed-dim":"#d7c3b0","on-secondary-fixed":"#241a0e","error-container":"#ffdad6","outline-variant":"#c2c9bb","on-surface":"#1b1c19","inverse-on-surface":"#f2f1ec"},
+        "borderRadius": {"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},
+        "spacing": {"margin":"32px","xs":"4px","lg":"40px","sm":"12px","base":"8px","md":"24px","gutter":"24px","xl":"64px"},
+        "fontFamily": {"body-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"display":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"]},
+        "fontSize": {"body-md":["16px",{"lineHeight":"1.6","fontWeight":"400"}],"label-sm":["12px",{"lineHeight":"1.4","fontWeight":"500"}],"headline-lg":["32px",{"lineHeight":"1.2","fontWeight":"600"}],"display":["48px",{"lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"1.6","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"1.3","fontWeight":"600"}],"label-md":["14px",{"lineHeight":"1.4","letterSpacing":"0.01em","fontWeight":"600"}]}
+      }
+    }
+  }
+</script>
+<style>
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fbf9f4; }
+</style>
+</head>
+<body class="bg-background text-on-background min-h-screen">
+
+<nav class="fixed top-0 w-full z-50 bg-stone-50/90 backdrop-blur-md border-b border-stone-200">
+  <div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+    <a href="index.html" class="text-xl font-bold text-emerald-900 no-underline" style="text-decoration:none">KierrätäSE</a>
+    <div class="hidden md:flex gap-8">
+      <a class="text-stone-600 hover:text-emerald-800 transition-colors" style="font-size:14px;font-weight:600" href="index.html">Osta</a>
+      <a class="text-stone-600 hover:text-emerald-800 transition-colors" style="font-size:14px;font-weight:600" href="lahjoita.html">Lahjoita</a>
+      <a class="text-stone-600 hover:text-emerald-800 transition-colors" style="font-size:14px;font-weight:600" href="tuotteet.html">Tuotteet</a>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="kassa.html" class="p-2 hover:bg-stone-100/50 rounded-lg transition-all text-emerald-700" style="text-decoration:none">
+        <span class="material-symbols-outlined">shopping_cart</span>
+      </a>
+      <button class="p-2 hover:bg-stone-100/50 rounded-lg transition-all">
+        <span class="material-symbols-outlined">account_circle</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main class="pt-24 pb-xl px-6 max-w-3xl mx-auto">
+  <div class="flex flex-col items-center text-center py-xl">
+    <div class="w-24 h-24 rounded-full bg-primary-fixed flex items-center justify-center mb-md shadow-lg">
+      <span class="material-symbols-outlined text-primary" style="font-size:48px;font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 48">check_circle</span>
+    </div>
+    <h1 class="font-display text-display text-primary mb-sm">Kiitos tilauksestasi!</h1>
+    <p class="font-body-lg text-body-lg text-secondary max-w-md">Tilauksesi on vastaanotettu. Saat vahvistuksen sähköpostiisi pian.</p>
+  </div>
+
+  <div class="bg-surface-container-high rounded-xl border border-outline-variant p-md mb-gutter shadow-sm">
+    <h2 class="font-headline-md text-headline-md text-on-surface mb-md">Tilauksen tiedot</h2>
+    <div class="space-y-sm mb-md">
+      <div class="flex justify-between text-on-surface-variant">
+        <span class="font-body-md">Tilausnumero</span>
+        <span class="font-label-md text-on-surface">#KSE-2026-04821</span>
+      </div>
+      <div class="flex justify-between text-on-surface-variant">
+        <span class="font-body-md">Päivämäärä</span>
+        <span class="font-label-md text-on-surface">22.4.2026</span>
+      </div>
+      <div class="flex justify-between text-on-surface-variant">
+        <span class="font-body-md">Toimitus</span>
+        <span class="font-label-md text-on-surface">Kotiinkuljetus</span>
+      </div>
+    </div>
+    <div class="border-t border-outline-variant pt-md space-y-md">
+      <div class="flex gap-sm items-center">
+        <div class="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 bg-white">
+          <img alt="Vintage puutuoli" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5meHmZ_AMhHyTdK8XA63jXbkc_iZO8T7lBGpqonVn0Zo7P8XPxOJUzqOQF5voc2zsQn2DOPoSqztC_FZtUeCXcVGnpFMAFdpl0DkdDyWj6BYWZff3dSXKwRBAD41z_fLdQJK5SFwmAMyuEGTHH2rSLvFNkyqiWStYlrS83MUlR41ZblpaoNDslVkR_SabRhsLe_sVC5JJD58Pt0uq67RQ39s0W9xmn56iULJcbmY5AJFOMH6-3Li99SFxdX9d0ge8srpQfrTPgE0X">
+        </div>
+        <div class="flex-grow">
+          <p class="font-label-md text-on-surface">Vintage puutuoli</p>
+          <p class="font-label-sm text-secondary">Kunto: Erinomainen</p>
+        </div>
+        <p class="font-label-md text-primary">45,00 €</p>
+      </div>
+      <div class="flex gap-sm items-center">
+        <div class="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 bg-white">
+          <img alt="Kierrätyskankainen kassi" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIdi4QVWCyvdkJafPflGA8gAF5oL6RWKBAe7eH4ZbLyLAY1NEU5NjuXAbMmNH4dCsFJedUx40EEPLwYvkEauCdEP4_BN3RNN0m3LYRzbTTYpLlXPDmwkjd2rdAdG0VD9ErHie28hxZ0-bKIzJ-3MJo7c6jcZdWw6svuKp48ETvRy0t7eRb4AVP5dnN_kmhExTh_n0ldjs5UqLTtc53IaDV-p1Iufcton1Vten7fkNPVa7eXqfOOCcjh7IEHO0KHNGbVIoUVM-MPY1I">
+        </div>
+        <div class="flex-grow">
+          <p class="font-label-md text-on-surface">Kierrätyskankainen kassi</p>
+          <p class="font-label-sm text-secondary">Väri: Luonnonvalkoinen × 2</p>
+        </div>
+        <p class="font-label-md text-primary">12,00 €</p>
+      </div>
+    </div>
+    <div class="border-t border-outline-variant pt-md mt-md space-y-xs">
+      <div class="flex justify-between text-on-surface-variant">
+        <span class="font-body-md">Välisumma</span><span class="font-body-md">57,00 €</span>
+      </div>
+      <div class="flex justify-between text-on-surface-variant">
+        <span class="font-body-md">Toimituskulut</span><span class="font-body-md">5,90 €</span>
+      </div>
+      <div class="flex justify-between items-baseline pt-sm border-t border-outline-variant/50">
+        <span class="font-headline-md text-on-surface">Yhteensä</span>
+        <span class="font-headline-lg text-primary">62,90 €</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-primary-container/20 p-md rounded-xl border border-primary-container/30 mb-gutter">
+    <div class="flex items-start gap-sm">
+      <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24">eco</span>
+      <div>
+        <p class="font-label-md text-primary">Vastuullinen valinta</p>
+        <p class="font-label-sm text-on-primary-fixed-variant">Tämä tilaus säästää noin 4,2 kg CO₂-päästöjä verrattuna uuden tuotteen ostoon. Kiitos!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-col sm:flex-row gap-sm">
+    <a href="tuotteet.html" class="flex-1 bg-primary text-on-primary py-4 rounded-xl font-label-md text-center hover:opacity-90 transition-opacity flex items-center justify-center gap-xs" style="text-decoration:none;color:white">
+      <span class="material-symbols-outlined" style="font-size:18px">shopping_bag</span>
+      Jatka ostoksia
+    </a>
+    <a href="index.html" class="flex-1 border border-outline-variant bg-surface py-4 rounded-xl font-label-md text-center hover:bg-surface-container transition-colors flex items-center justify-center gap-xs" style="text-decoration:none;color:#1b1c19">
+      <span class="material-symbols-outlined" style="font-size:18px">home</span>
+      Etusivulle
+    </a>
+  </div>
+</main>
+
+<footer class="bg-stone-100 py-12 border-t border-stone-200 mt-xl">
+  <div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-6">
+    <div class="text-emerald-900 font-bold">KierrätäSE</div>
+    <div class="flex gap-8">
+      <a class="font-body-md text-stone-500 hover:text-emerald-700 transition-colors" href="#">Vastuullisuusraportti</a>
+      <a class="font-body-md text-stone-500 hover:text-emerald-700 transition-colors" href="#">Tietosuoja</a>
+      <a class="font-body-md text-stone-500 hover:text-emerald-700 transition-colors" href="#">Ota yhteyttä</a>
+    </div>
+    <p class="font-body-md text-stone-400">© 2026 KierrätäSE. Kaikki oikeudet pidätetään.</p>
+  </div>
+</footer>
+</body></html>
