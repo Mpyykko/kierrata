@@ -1,0 +1,327 @@
+<!DOCTYPE html><html lang="fi"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error": "#ba1a1a",
+                    "surface-variant": "#e4e2dd",
+                    "surface-dim": "#dbdad5",
+                    "outline": "#72796e",
+                    "on-error": "#ffffff",
+                    "secondary-fixed": "#f4dfcb",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#9dd090",
+                    "secondary": "#6b5c4c",
+                    "on-secondary-container": "#716252",
+                    "on-background": "#1b1c19",
+                    "surface-container": "#f0eee9",
+                    "primary-fixed-dim": "#a1d494",
+                    "on-tertiary-fixed": "#2b1609",
+                    "primary": "#154212",
+                    "on-tertiary-fixed-variant": "#5c4130",
+                    "tertiary": "#4d3324",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed": "#bcf0ae",
+                    "surface-tint": "#3b6934",
+                    "tertiary-fixed": "#ffdbc8",
+                    "on-primary": "#ffffff",
+                    "tertiary-container": "#664a39",
+                    "surface-container-high": "#eae8e3",
+                    "on-secondary-fixed-variant": "#524436",
+                    "surface-container-low": "#f5f3ee",
+                    "on-primary-fixed": "#002201",
+                    "primary-container": "#2d5a27",
+                    "on-tertiary-container": "#e2bba5",
+                    "tertiary-fixed-dim": "#e6bea9",
+                    "surface-bright": "#fbf9f4",
+                    "surface-container-highest": "#e4e2dd",
+                    "inverse-primary": "#a1d494",
+                    "on-tertiary": "#ffffff",
+                    "on-surface-variant": "#42493e",
+                    "surface": "#fbf9f4",
+                    "secondary-container": "#f4dfcb",
+                    "on-error-container": "#93000a",
+                    "background": "#fbf9f4",
+                    "on-primary-fixed-variant": "#23501e",
+                    "inverse-surface": "#30312e",
+                    "secondary-fixed-dim": "#d7c3b0",
+                    "on-secondary-fixed": "#241a0e",
+                    "error-container": "#ffdad6",
+                    "outline-variant": "#c2c9bb",
+                    "on-surface": "#1b1c19",
+                    "inverse-on-surface": "#f2f1ec"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin": "32px",
+                    "xs": "4px",
+                    "lg": "40px",
+                    "sm": "12px",
+                    "base": "8px",
+                    "md": "24px",
+                    "gutter": "24px",
+                    "xl": "64px"
+            },
+            "fontFamily": {
+                    "body-md": ["Plus Jakarta Sans"],
+                    "label-sm": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "display": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "label-md": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "display": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #fbf9f4;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-stone-50/90 backdrop-blur-md border-b border-stone-200">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-bold text-emerald-900" style="">KierrätäSE</div>
+<div class="hidden md:flex gap-8">
+<a class="font-label-md text-stone-600 hover:text-emerald-800 transition-colors" href="#" style="">Osta</a>
+<a class="font-label-md text-stone-600 hover:text-emerald-800 transition-colors" href="#" style="">Lahjoita</a>
+<a class="font-label-md text-stone-600 hover:text-emerald-800 transition-colors" href="#" style="">Tuotteet</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-stone-100/50 rounded-lg transition-all active:scale-95" style="">
+<span class="material-symbols-outlined" data-icon="search" style="">search</span>
+</button>
+<button class="p-2 hover:bg-stone-100/50 rounded-lg transition-all active:scale-95 text-emerald-700 relative" style="">
+<span class="material-symbols-outlined" data-icon="shopping_cart" style="">shopping_cart</span>
+<span class="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full"></span>
+</button>
+<button class="p-2 hover:bg-stone-100/50 rounded-lg transition-all active:scale-95" style="">
+<span class="material-symbols-outlined" data-icon="account_circle" style="">account_circle</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-24 pb-xl px-6 max-w-7xl mx-auto">
+<div class="mb-lg">
+<h1 class="font-display text-display text-primary" style="">Kassa</h1>
+<p class="font-body-lg text-body-lg text-secondary" style="">Viimeistele tilauksesi ja liity kiertotalouteen.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left Column: Checkout Forms -->
+<div class="lg:col-span-7 space-y-md">
+<!-- Section 1: Personal Info -->
+<section class="bg-surface-container-low p-md rounded-xl border border-outline-variant/30">
+<div class="flex items-center gap-sm mb-md">
+<span class="material-symbols-outlined text-primary" data-icon="person" style="">person</span>
+<h2 class="font-headline-md text-headline-md text-on-surface" style="">Yhteystiedot</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-on-surface-variant" style="">Koko nimi</label>
+<input class="bg-surface-bright border-b border-outline-variant focus:border-primary focus:ring-0 px-sm py-xs text-body-md rounded-t-lg transition-colors" placeholder="Esim. Matti Meikäläinen" type="text">
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-on-surface-variant" style="">Sähköposti</label>
+<input class="bg-surface-bright border-b border-outline-variant focus:border-primary focus:ring-0 px-sm py-xs text-body-md rounded-t-lg transition-colors" placeholder="matti@esimerkki.fi" type="email">
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-on-surface-variant" style="">Puhelinnumero</label>
+<input class="bg-surface-bright border-b border-outline-variant focus:border-primary focus:ring-0 px-sm py-xs text-body-md rounded-t-lg transition-colors" placeholder="+358 40 123 4567" type="tel">
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-on-surface-variant" style="">Osoite</label>
+<input class="bg-surface-bright border-b border-outline-variant focus:border-primary focus:ring-0 px-sm py-xs text-body-md rounded-t-lg transition-colors" placeholder="Kotikatu 1 A 5" type="text">
+</div>
+</div>
+</section>
+<!-- Section 2: Delivery Methods -->
+<section class="bg-surface-container-low p-md rounded-xl border border-outline-variant/30">
+<div class="flex items-center gap-sm mb-md">
+<span class="material-symbols-outlined text-primary" data-icon="local_shipping" style="">local_shipping</span>
+<h2 class="font-headline-md text-headline-md text-on-surface" style="">Toimitustapa</h2>
+</div>
+<div class="space-y-sm">
+<label class="flex items-center justify-between p-sm border border-outline-variant rounded-lg cursor-pointer hover:bg-surface-bright transition-colors group" style="">
+<div class="flex items-center gap-sm">
+<input checked="" class="text-primary focus:ring-primary h-5 w-5 border-outline" name="delivery" type="radio">
+<div>
+<p class="font-label-md text-on-surface" style="">Postipaketti</p>
+<p class="font-label-sm text-on-surface-variant" style="">Nouto valitsemastasi automaatista</p>
+</div>
+</div>
+<span class="font-label-md text-primary" style="">5,90 €</span>
+</label>
+<label class="flex items-center justify-between p-sm border border-outline-variant rounded-lg cursor-pointer hover:bg-surface-bright transition-colors group" style="">
+<div class="flex items-center gap-sm">
+<input class="text-primary focus:ring-primary h-5 w-5 border-outline" name="delivery" type="radio">
+<div>
+<p class="font-label-md text-on-surface" style="">Kirje</p>
+<p class="font-label-sm text-on-surface-variant" style="">Pienikokoisille tuotteille kotiin</p>
+</div>
+</div>
+<span class="font-label-md text-primary" style="">2,90 €</span>
+</label>
+<label class="flex items-center justify-between p-sm border border-outline-variant rounded-lg cursor-pointer hover:bg-surface-bright transition-colors group" style="">
+<div class="flex items-center gap-sm">
+<input class="text-primary focus:ring-primary h-5 w-5 border-outline" name="delivery" type="radio">
+<div>
+<p class="font-label-md text-on-surface" style="">Nouto</p>
+<p class="font-label-sm text-on-surface-variant" style="">Hae tuote suoraan myymälästämme</p>
+</div>
+</div>
+<span class="font-label-md text-primary" style="">0,00 €</span>
+</label>
+</div>
+</section>
+<!-- Section 3: Payment Methods -->
+<section class="bg-surface-container-low p-md rounded-xl border border-outline-variant/30">
+<div class="flex items-center gap-sm mb-md">
+<span class="material-symbols-outlined text-primary" data-icon="payments" style="">payments</span>
+<h2 class="font-headline-md text-headline-md text-on-surface" style="">Maksutapa</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-sm">
+<label class="flex flex-col items-center justify-center p-md border border-outline-variant rounded-xl cursor-pointer hover:bg-surface-bright hover:border-primary transition-all group" style="">
+<input checked="" class="hidden peer" name="payment" type="radio">
+<span class="material-symbols-outlined text-primary mb-xs" data-icon="account_balance" style="">account_balance</span>
+<p class="font-label-md text-on-surface" style="">Verkkopankki</p>
+<div class="mt-xs w-4 h-4 border-2 border-outline rounded-full peer-checked:bg-primary peer-checked:border-primary"></div>
+</label>
+<label class="flex flex-col items-center justify-center p-md border border-outline-variant rounded-xl cursor-pointer hover:bg-surface-bright hover:border-primary transition-all group" style="">
+<input class="hidden peer" name="payment" type="radio">
+<span class="material-symbols-outlined text-primary mb-xs" data-icon="credit_card" style="">credit_card</span>
+<p class="font-label-md text-on-surface" style="">Luottokortti</p>
+<div class="mt-xs w-4 h-4 border-2 border-outline rounded-full peer-checked:bg-primary peer-checked:border-primary"></div>
+</label>
+<label class="flex flex-col items-center justify-center p-md border border-outline-variant rounded-xl cursor-pointer hover:bg-surface-bright hover:border-primary transition-all group" style="">
+<input class="hidden peer" name="payment" type="radio">
+<span class="material-symbols-outlined text-primary mb-xs" data-icon="universal_currency_alt" style="">universal_currency_alt</span>
+<p class="font-label-md text-on-surface" style="">PayPal</p>
+<div class="mt-xs w-4 h-4 border-2 border-outline rounded-full peer-checked:bg-primary peer-checked:border-primary"></div>
+</label>
+</div>
+</section>
+<!-- Additional Info -->
+<section class="bg-surface-container-low p-md rounded-xl border border-outline-variant/30">
+<div class="flex flex-col gap-xs mb-md">
+<label class="font-headline-md text-headline-md text-on-surface" style="">Lisätiedot</label>
+<textarea class="w-full bg-surface-bright border border-outline-variant focus:border-primary focus:ring-0 p-sm text-body-md rounded-lg transition-colors" placeholder="Kirjoita viesti myyjälle..." rows="3"></textarea>
+</div>
+<label class="flex items-start gap-sm cursor-pointer group" style="">
+<input class="mt-1 text-primary focus:ring-primary h-5 w-5 border-outline rounded" type="checkbox">
+<span class="font-body-md text-on-surface-variant group-hover:text-on-surface transition-colors" style="">Hyväksyn <a class="text-primary underline" href="#" style="">toimitusehdot</a> ja vahvistan tiedot oikeiksi.</span>
+</label>
+</section>
+</div>
+<!-- Right Column: Order Summary (Cart) -->
+<div class="lg:col-span-5 lg:sticky lg:top-24 space-y-md">
+<section class="bg-surface-container-high p-md rounded-xl border border-secondary-fixed shadow-sm">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-md" style="">Yhteenveto</h2>
+<!-- Cart Items -->
+<div class="space-y-md mb-lg">
+<div class="flex gap-sm items-center">
+<div class="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 bg-white">
+<img alt="Second hand wooden chair" class="w-full h-full object-cover" data-alt="vintage wooden chair with natural grain and minimalist design on a neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5meHmZ_AMhHyTdK8XA63jXbkc_iZO8T7lBGpqonVn0Zo7P8XPxOJUzqOQF5voc2zsQn2DOPoSqztC_FZtUeCXcVGnpFMAFdpl0DkdDyWj6BYWZff3dSXKwRBAD41z_fLdQJK5SFwmAMyuEGTHH2rSLvFNkyqiWStYlrS83MUlR41ZblpaoNDslVkR_SabRhsLe_sVC5JJD58Pt0uq67RQ39s0W9xmn56iULJcbmY5AJFOMH6-3Li99SFxdX9d0ge8srpQfrTPgE0X" style="">
+</div>
+<div class="flex-grow">
+<p class="font-label-md text-on-surface" style="">Vintage puutuoli</p>
+<p class="font-label-sm text-secondary" style="">Kunto: Erinomainen</p>
+<div class="flex justify-between items-end mt-xs">
+<p class="font-label-sm text-on-surface-variant" style="">Kpl: 1</p>
+<p class="font-label-md text-primary" style="">45,00 €</p>
+</div>
+</div>
+</div>
+<div class="flex gap-sm items-center">
+<div class="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 bg-white">
+<img alt="Cotton tote bag" class="w-full h-full object-cover" data-alt="sustainable organic cotton tote bag with a simple geometric pattern on a light textured surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIdi4QVWCyvdkJafPflGA8gAF5oL6RWKBAe7eH4ZbLyLAY1NEU5NjuXAbMmNH4dCsFJedUx40EEPLwYvkEauCdEP4_BN3RNN0m3LYRzbTTYpLlXPDmwkjd2rdAdG0VD9ErHie28hxZ0-bKIzJ-3MJo7c6jcZdWw6svuKp48ETvRy0t7eRb4AVP5dnN_kmhExTh_n0ldjs5UqLTtc53IaDV-p1Iufcton1Vten7fkNPVa7eXqfOOCcjh7IEHO0KHNGbVIoUVM-MPY1I" style="">
+</div>
+<div class="flex-grow">
+<p class="font-label-md text-on-surface" style="">Kierrätyskankainen kassi</p>
+<p class="font-label-sm text-secondary" style="">Väri: Luonnonvalkoinen</p>
+<div class="flex justify-between items-end mt-xs">
+<p class="font-label-sm text-on-surface-variant" style="">Kpl: 2</p>
+<p class="font-label-md text-primary" style="">12,00 €</p>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-outline-variant py-md space-y-sm">
+<div class="flex justify-between text-on-surface-variant">
+<span class="font-body-md" style="">Välisumma</span>
+<span class="font-body-md" style="">57,00 €</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span class="font-body-md" style="">Toimituskulut</span>
+<span class="font-body-md" style="">5,90 €</span>
+</div>
+<div class="flex justify-between items-baseline pt-sm border-t border-outline-variant/50">
+<span class="font-headline-md text-on-surface" style="">Yhteensä</span>
+<span class="text-display font-display text-primary" style="">62,90 €</span>
+</div>
+</div>
+<button class="w-full bg-primary text-white py-4 px-md rounded-lg font-headline-md hover:brightness-110 active:scale-[0.98] transition-all flex items-center justify-center gap-sm mt-md shadow-lg shadow-primary/20" style="">
+<span class="" style="">Tilaa nyt</span>
+<span class="material-symbols-outlined" data-icon="arrow_forward" style="">arrow_forward</span>
+</button>
+<!-- Trust Badge -->
+<div class="mt-lg flex items-center justify-center gap-sm p-sm bg-secondary-fixed/30 rounded-lg">
+<span class="material-symbols-outlined text-secondary" data-icon="verified" style="">verified</span>
+<span class="font-label-sm text-on-secondary-container" style="">Turvallinen ja luotettava maksu</span>
+</div>
+</section>
+<!-- Eco Impact Note -->
+<div class="bg-primary-container/20 p-md rounded-xl border border-primary-container/30">
+<div class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary" data-icon="eco" style="font-variation-settings: &quot;FILL&quot; 1;">eco</span>
+<div>
+<p class="font-label-md text-primary" style="">Vastuullinen valinta</p>
+<p class="font-label-sm text-on-primary-fixed-variant" style="">Tämä tilaus säästää noin 4.2kg CO2-päästöjä verrattuna uuden tuotteen ostoon.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 py-12 border-t border-stone-200 mt-xl">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-6">
+<div class="text-emerald-900 font-bold" style="">KierrätäSE</div>
+<div class="flex gap-8">
+<a class="font-body-md text-stone-500 hover:text-emerald-700 transition-colors" href="#" style="">Vastuullisuusraportti</a>
+<a class="font-body-md text-stone-500 hover:text-emerald-700 transition-colors" href="#" style="">Tietosuoja</a>
+<a class="font-body-md text-stone-500 hover:text-emerald-700 transition-colors" href="#" style="">Ota yhteyttä</a>
+</div>
+<p class="font-body-md text-stone-400" style="">© 2026 KierrätäSE. Kaikki oikeudet pidätetään.</p>
+</div>
+</footer>
+</body></html>

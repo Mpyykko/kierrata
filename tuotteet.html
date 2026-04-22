@@ -1,0 +1,307 @@
+<!DOCTYPE html><html class="light" lang="fi" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>EcoCycle | Kestävä valikoima</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "error": "#ba1a1a",
+                      "inverse-primary": "#a1d494",
+                      "on-primary": "#ffffff",
+                      "surface-dim": "#dbdad5",
+                      "inverse-surface": "#30312e",
+                      "secondary-container": "#f4dfcb",
+                      "error-container": "#ffdad6",
+                      "tertiary": "#4d3324",
+                      "on-primary-fixed": "#002201",
+                      "tertiary-fixed-dim": "#e6bea9",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-variant": "#e4e2dd",
+                      "primary": "#154212",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-high": "#eae8e3",
+                      "tertiary-fixed": "#ffdbc8",
+                      "inverse-on-surface": "#f2f1ec",
+                      "on-surface": "#1b1c19",
+                      "outline": "#72796e",
+                      "on-secondary-fixed-variant": "#524436",
+                      "outline-variant": "#c2c9bb",
+                      "secondary-fixed": "#f4dfcb",
+                      "primary-container": "#2d5a27",
+                      "surface-container-low": "#f5f3ee",
+                      "primary-fixed": "#bcf0ae",
+                      "on-secondary-fixed": "#241a0e",
+                      "on-primary-container": "#9dd090",
+                      "surface-tint": "#3b6934",
+                      "on-tertiary-container": "#e2bba5",
+                      "on-error-container": "#93000a",
+                      "surface-container": "#f0eee9",
+                      "on-surface-variant": "#42493e",
+                      "on-tertiary-fixed": "#2b1609",
+                      "primary-fixed-dim": "#a1d494",
+                      "secondary": "#6b5c4c",
+                      "surface-container-highest": "#e4e2dd",
+                      "secondary-fixed-dim": "#d7c3b0",
+                      "surface": "#fbf9f4",
+                      "surface-bright": "#fbf9f4",
+                      "on-secondary": "#ffffff",
+                      "on-secondary-container": "#716252",
+                      "on-tertiary-fixed-variant": "#5c4130",
+                      "tertiary-container": "#664a39",
+                      "on-primary-fixed-variant": "#23501e",
+                      "on-background": "#1b1c19",
+                      "on-error": "#ffffff",
+                      "background": "#fbf9f4"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "lg": "40px",
+                      "gutter": "24px",
+                      "xs": "4px",
+                      "md": "24px",
+                      "base": "8px",
+                      "xl": "64px",
+                      "margin": "32px",
+                      "sm": "12px"
+              },
+              "fontFamily": {
+                      "label-sm": ["Plus Jakarta Sans"],
+                      "headline-md": ["Plus Jakarta Sans"],
+                      "body-lg": ["Plus Jakarta Sans"],
+                      "display": ["Plus Jakarta Sans"],
+                      "body-md": ["Plus Jakarta Sans"],
+                      "label-md": ["Plus Jakarta Sans"],
+                      "headline-lg": ["Plus Jakarta Sans"]
+              },
+              "fontSize": {
+                      "label-sm": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                      "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "display": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                      "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar Component -->
+<header class="bg-[#F5F5F0] dark:bg-stone-950 font-['Plus_Jakarta_Sans'] antialiased full-width top-0 border-b border-stone-200 dark:border-stone-800 shadow-[0_4px_20px_-4px_rgba(107,78,61,0.1)] sticky z-50">
+<nav class="flex justify-between items-center h-20 px-8 max-w-[1280px] mx-auto w-full">
+<div class="flex items-center gap-12">
+<a class="text-2xl font-bold tracking-tight text-[#2D5A27] dark:text-emerald-500" href="#" style="">KierräteSE</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#2D5A27] dark:text-emerald-400 font-semibold border-b-2 border-[#2D5A27] pb-1" href="#" style="">Osta</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#2D5A27] transition-colors" href="#" style="">Lahjoita</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#2D5A27] transition-colors" href="#" style=""><br></a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#2D5A27] transition-colors" href="#" style="">Tuotteet</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden lg:flex items-center bg-surface-container rounded-full px-4 py-2 border border-outline-variant">
+<span class="material-symbols-outlined text-on-surface-variant mr-2" data-icon="search" style="">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-label-md w-48 text-on-surface" placeholder="Etsi kestäviä tuotteita..." type="text">
+</div>
+<button class="p-2 text-stone-600 dark:text-stone-400 hover:bg-stone-100 dark:hover:bg-stone-900 rounded-md transition-all active:scale-95" style="">
+<span class="material-symbols-outlined" data-icon="shopping_cart" style="">shopping_cart</span>
+</button>
+<button class="p-2 text-stone-600 dark:text-stone-400 hover:bg-stone-100 dark:hover:bg-stone-900 rounded-md transition-all active:scale-95" style="">
+<span class="material-symbols-outlined" data-icon="account_circle" style="">account_circle</span>
+</button>
+</div>
+</nav>
+</header>
+<main class="max-w-[1280px] mx-auto px-8 pt-xl">
+<!-- Hero Section -->
+<section class="mb-xl">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-7">
+<h1 class="font-display text-display text-primary mb-md" style="">Kuratointia kestävyyden ehdoilla.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl" style="">
+                        Löydä esineitä, joilla on tarina kerrottavanaan. Jokainen kokoelmamme tuote on tarkastettu eettisyyden ja ympäristövaikutusten osalta.
+                    </p>
+</div>
+<div class="md:col-span-5 flex flex-wrap gap-sm justify-end">
+<div class="bg-secondary-container text-on-secondary-container px-sm py-xs rounded-full font-label-md flex items-center gap-2" style="">
+<span class="material-symbols-outlined text-[18px]" data-icon="eco" style="">eco</span>
+                        Eettisesti hankittu
+                    </div>
+<div class="bg-secondary-container text-on-secondary-container px-sm py-xs rounded-full font-label-md flex items-center gap-2" style="">
+<span class="material-symbols-outlined text-[18px]" data-icon="recycling" style="">recycling</span>
+                        Jätteetön pakkaus
+                    </div>
+</div>
+</div>
+</section>
+<!-- Product Grid -->
+<section class="mb-xl">
+<div class="flex justify-between items-end mb-lg">
+<div class="space-y-1">
+<h2 class="font-headline-lg text-headline-lg text-on-surface" style="">Tuotelistaus</h2>
+<p class="font-label-md text-label-md text-on-surface-variant" style="">Näytetään 10 uniikkia kestävää löytöä</p>
+</div>
+<div class="flex gap-sm">
+<button class="flex items-center gap-2 border border-outline px-4 py-2 rounded-lg font-label-md hover:bg-surface-container transition-colors" style="">
+<span class="material-symbols-outlined text-[20px]" data-icon="tune" style="">tune</span>
+                        Suodattimet
+                    </button>
+</div>
+</div>
+<!-- Simplified Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Product 1 -->
+<div class="group cursor-pointer bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant hover:shadow-md transition-all duration-300">
+<div class="relative h-[280px] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Kierrätetty tammipöytä" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvNUQcNY_5p4MQOgbTAubzrSrbn1Bp6b8RjDDZKDnPPnxeog2H_5gQCt07Ish1-89A1Xi6rWrEbgSU0Wq6Gb39aQLknk9MKyEVxEwJEmi0jjnYSaAasBFhr9YbkVj52D1ifJuVBuR7KFHy9wdoADMZEy7a-1kZ074TQYSRAtP7Z-XsnfUpY4jzzQKHfBQE5FHRAW_RCWIZmzZqB4FBW53Novej7XNvovH7pQMYGBN6HyK1ZzJxbiSSQeS-Q-YRb3sGypjGnfheAc-r" style="">
+<div class="absolute top-3 left-3 bg-primary text-on-primary px-2 py-1 rounded-full text-[10px] uppercase font-bold tracking-wider" style="">Kestävä</div>
+</div>
+<div class="p-md">
+<h3 class="font-label-md text-on-surface truncate" style="">Heritage-pöytä tammea</h3>
+<div class="mt-1 flex justify-between items-center">
+<span class="text-primary font-bold" style="">840.00 €</span>
+<span class="text-[12px] text-on-surface-variant" style="">Kierrätetty</span>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="group cursor-pointer bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant hover:shadow-md transition-all duration-300">
+<div class="relative h-[280px] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Kierrätyslasiastat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLlaJ6sV30t0I8RkSvLo2K_7PH17Tttij-nJa4Cl1FgW43X_akkca339xipb1cfDTBJgwUy4Ki52Qdpj5FLk1vJCKp9WkNnjXOiNoOYQ75IkHo_mlqT7N1vA0DFnaXgMCU7XNiO_7OFjKby0xcYMwByppx3y5RltGvsLSdSGKuDnxaUZB93yOSXeaO5YdIKZSuKEeAtyqLV07Bhu30bwEoLiOZKauQ-joP-mSVnp9u1V4VuZ85-m8vTi1saqujdj-piiZwQ_nVF3In" style="">
+</div>
+<div class="p-md">
+<h3 class="font-label-md text-on-surface truncate" style="">Kierrätyslasinen setti</h3>
+<div class="mt-1 flex justify-between items-center">
+<span class="text-primary font-bold" style="">42.00 €</span>
+<span class="text-[12px] text-on-surface-variant" style="">Käsityö</span>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="group cursor-pointer bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant hover:shadow-md transition-all duration-300">
+<div class="relative h-[280px] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Vintage farkkutakki" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqeiXEK1iR_yAM6qZp-x9vaJcpdVfdFOpa_39YLJWh0P-uH50tE_x16JdkcovSjikCA6a4XKHeIMmAfadYmFsuEDMRQTIhqudRAGAvPWG3k2e71tj1p8xUcAp98U1LowT9MhUqeYG-m6VEpo3SM93ZTjeLDHHloS6TXda9ZpcXoTtDNSufNyKeKZQMIH60fJImQK7GgJT2h7btheI_QH1y18IQc5-R92KfCPAknwcxx3dLLzWCyUViMGV9PHykHuSqaJ3XuwBWCzX_" style="">
+</div>
+<div class="p-md">
+<h3 class="font-label-md text-on-surface truncate" style="">90-luvun farkkutakki</h3>
+<div class="mt-1 flex justify-between items-center">
+<span class="text-primary font-bold" style="">68.00 €</span>
+<span class="text-[12px] text-on-surface-variant" style="">Vintage</span>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="group cursor-pointer bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant hover:shadow-md transition-all duration-300">
+<div class="relative h-[280px] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Terrazzo-ruukku" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnmRG-NqqEfVi1L-wi05r2de3yq_SxEFC-NTpy6iXpiDCizvv6ZuSyRN8B8YPs9A7Enx3u53kFUO8huPYCWJlvHFd9_YJIAwCyBbZnOvXJees10wRiblRAkZTBxBoZRrBokcjdFTVKnnzOc-UtgSzoJxUdQ7_VGRjp0qmwnNJ5Fj3RNHs0SZtKP4Bkutu5PLhSiSpOEZlrakVQAfjvcrvP_NlX0GrbISnqu-PWqGAKDp7gzlZNohG0ubY8KYkjM8ItMsGtzEnAV03k" style="">
+</div>
+<div class="p-md">
+<h3 class="font-label-md text-on-surface truncate" style="">Terrazzo-kukkaruukku</h3>
+<div class="mt-1 flex justify-between items-center">
+<span class="text-primary font-bold" style="">24.00 €</span>
+<span class="text-[12px] text-on-surface-variant" style="">Ekologinen</span>
+</div>
+</div>
+</div>
+<!-- Product 5 -->
+<div class="group cursor-pointer bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant hover:shadow-md transition-all duration-300">
+<div class="relative h-[280px] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Seinävaate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgch4ujhm9FXSxAhwSSqp0bsByJ7KX5Lm21WLqPYKQZpigea7IqaAJdUciyY6fVoR-o1IfRL1Ol7alYWg4EVw06bRWWLdX7f1Ge5pVuUkM3H1wFG7C03Hd-G928-FweS8eLOAQLDxMiRgc8SUCK3X3THnhCX2rKaZxPLSiY375EwEJbqClf2NKf1bM-K-pXrU6jsGcypaH1a5jIRrSvVapil4T72fnKtsvE6cKycmgVZExaEennckJFHVNB9Zqo_S0pe2Uke2nUJ5t" style="">
+</div>
+<div class="p-md">
+<h3 class="font-label-md text-on-surface truncate" style="">Kuituseinävaate</h3>
+<div class="mt-1 flex justify-between items-center">
+<span class="text-primary font-bold" style="">115.00 €</span>
+<span class="text-[12px] text-on-surface-variant" style="">Luonnonkuitu</span>
+</div>
+</div>
+</div>
+<!-- Product 6 -->
+<div class="group cursor-pointer bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant hover:shadow-md transition-all duration-300">
+<div class="relative h-[280px] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Pellavalakanat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy1VNiFNIEeP51l1NxXKZhGhIlxzLgKuzXPAMAwjABeerPF8JB5d9Cc1Z54bmOA7NZ9CJgKGvIFPjSX9ywVI3hm0m7DeXM1vDM7CJGQ6pyU2iIFCfXTc5B2SSelMTHx1-MxcO-GLnUYBufRsBgS1lQqzrVYHPi6CKgNaqUBIe6kyEIa1JUjk1UYTFL_QODYLRsk9zo4P1JARj-AFclB2Two8pzMrSshZQYaKCe-SGKRp8SRv3tvYDuym67C56HwGwNf0wdsGJYcaFg" style="">
+</div>
+<div class="p-md">
+<h3 class="font-label-md text-on-surface truncate" style="">Eurooppalainen pellavasetti</h3>
+<div class="mt-1 flex justify-between items-center">
+<span class="text-primary font-bold" style="">195.00 €</span>
+<span class="text-[12px] text-on-surface-variant" style="">Pellava</span>
+</div>
+</div>
+</div>
+<!-- Product 7 -->
+<div class="group cursor-pointer bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant hover:shadow-md transition-all duration-300">
+<div class="relative h-[280px] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Messinkiset kynttilänjalat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEPFtI4Wl3w0jwpOP3L5NIF8IAV3dsGAeKGPbLAOr30Td6m-CWgJLy8zkKI49z1i8YYa3dlGCaO_eGmcrHVRJ7XNS4z11JVTSY4k-5lXVx0E9cXO1bbEe9-BbbW3SKswjik9CVL18PJoKA11eZqF2tcp1S6X1fpiQ6_58YOIiGf94J2R-SU63ssz0kvnbJa9vbsJlm9JJ-QzIbysYcXm4YyCziXKRUXf9CmcGBtRJRC-EoRS8ayMia3kHh9DaNaCmPKqZpNHUiCVCB" style="">
+</div>
+<div class="p-md">
+<h3 class="font-label-md text-on-surface truncate" style="">Kierrätysmessinkiset jalat</h3>
+<div class="mt-1 flex justify-between items-center">
+<span class="text-primary font-bold" style="">55.00 €</span>
+<span class="text-[12px] text-on-surface-variant" style="">Messinki</span>
+</div>
+</div>
+</div>
+<!-- Product 8 -->
+<div class="group cursor-pointer bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant hover:shadow-md transition-all duration-300">
+<div class="relative h-[280px] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Pähkinäpuinen sivupöytä" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAycSy5kKtKE-djved6wDfn3ASBK0WPlU14fUP0VWH9NoimhqPquBwOho1SmUBJ6qvEDhwkeXIklckmQUxnrV9BcEw2UzmKpEp5m_jbR1QDtqPVDxzUerp_6vWquhoWhCbjPpoN2lTyITSyaKj1zTNaooutCfTeGEdbNykULbbjJnGx3otwuX5We93IffDi9nBAodT5BkPYd2_sUTwSYCF7nIgkxSLwWXrqgPI2uvJNY5Xban4vFr9Tdwt7xTWw9mYSzV9K4ak09Qj" style="">
+</div>
+<div class="p-md">
+<h3 class="font-label-md text-on-surface truncate" style="">Pähkinäpuinen sivupöytä</h3>
+<div class="mt-1 flex justify-between items-center">
+<span class="text-primary font-bold" style="">310.00 €</span>
+<span class="text-[12px] text-on-surface-variant" style="">Uusiokäytetty</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter Section -->
+<section class="bg-primary-container text-on-primary-container rounded-xl p-lg flex flex-col md:flex-row items-center justify-between gap-gutter overflow-hidden relative">
+<div class="relative z-10 space-y-md">
+<h2 class="font-headline-lg text-headline-lg" style="">Liity piiriin.</h2>
+<p class="font-body-md text-body-md max-w-md opacity-90" style="">Saat ennakkopääsyn viikoittaisiin uutuuksiin ja tarinoita hankintakumppaneiltamme.</p>
+<div class="flex gap-sm max-w-sm">
+<input class="flex-grow rounded-lg bg-surface-container-low text-on-surface px-4 border-none focus:ring-2 focus:ring-on-primary-container" placeholder="Sähköpostiosoitteesi" type="email">
+<button class="bg-on-primary-container text-primary-container px-6 py-2 rounded-lg font-label-md font-bold hover:opacity-90 transition-opacity" style="">Tilaa</button>
+</div>
+</div>
+<div class="md:w-1/3 opacity-20 absolute right-0 top-0 h-full">
+<span class="material-symbols-outlined text-[300px] leading-none select-none" data-icon="nature" style="">nature</span>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="bg-[#F5F5F0] dark:bg-stone-950 font-['Plus_Jakarta_Sans'] text-sm full-width border-t mt-16 border-stone-200 dark:border-stone-800">
+<div class="max-w-[1280px] mx-auto py-12 px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="text-lg font-bold text-[#2D5A27]" style="">KierrätäSE</span>
+<p class="text-stone-500 dark:text-stone-400 text-center md:text-left" style="">© 2026 KierrätäSE. Rakennettu kestämään ja kantamaan yhteistä vastuuta.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#2D5A27] dark:hover:text-emerald-400 underline decoration-1 underline-offset-4 transition-opacity" href="#" style="">Vastuullisuusraportti</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#2D5A27] dark:hover:text-emerald-400 underline decoration-1 underline-offset-4 transition-opacity" href="#" style="">Alkuperä</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#2D5A27] dark:hover:text-emerald-400 underline decoration-1 underline-offset-4 transition-opacity" href="#" style="">Tietosuoja</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#2D5A27] dark:hover:text-emerald-400 underline decoration-1 underline-offset-4 transition-opacity" href="#" style="">Ota yhteyttä</a>
+</div>
+</div>
+</footer>
+</body></html>
